@@ -20,27 +20,14 @@
         </div>
     @endif
 
-    <form action="{{ URL::to('update-category') }}/{{ $category ?? ''->id }}" method="post" enctype="multipart/form-data">
+    <form action="{{ URL::to('update-subcategory') }}/{{ $subcategory->id }}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
             <label for="exampleInputEmail1"> Subcategory name</label>
-            <input type="text" class="form-control" value="{{ $subcategory->name }}" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter category name" name="categoryName">
+            <input type="text" class="form-control" value="{{ $subcategory->name }}" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter category name" name="subcategoryName" required>
         </div>
-
-        
-
-        
 
         <button type="submit" class="btn btn-primary"> Update </button>
     </form>
-    <script>
-        function loadPhoto(event) {
-            var reader = new FileReader();
-            reader.onload = function () {
-                var output = document.getElementById('photo');
-                output.src = reader.result;
-            };
-            reader.readAsDataURL(event.target.files[0]);
-        }
-    </script>
+   
 @stop

@@ -24,7 +24,7 @@
         @csrf
         <div class="form-group">
             <label for="exampleInputEmail1"> Category name</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter category name" name="categoryName">
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter category name" name="categoryName" required>
         </div>
 
        

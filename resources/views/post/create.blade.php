@@ -24,18 +24,17 @@
         @csrf
         <div class="form-group">
             <label for="exampleInputEmail1"> Post title </label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter post title" name="title">
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter post title" name="title" required>
         </div>
 
         <div class="form-group">
             <label for="exampleInputEmail1"> Post Detail </label>
-            <textarea name="details" id="editor1"></textarea>
+            <textarea name="details" id="editor1" required></textarea>
         </div>
 
         <div class="form-group">
             <label for="exampleInputEmail1"> Select product category </label>
             <select class="form-control" name="subcategory_id">
-                <option> Select </option>
                 @foreach($subcategories as $subcategory)
                     <option value="{{ $subcategory->id }}"> {{ $subcategory->name }}</option>
                 @endforeach
