@@ -43,9 +43,9 @@ class PostController extends Controller
         $post->title = $request->input('title');
         $post->details = $request->input('details');
         if ($post->save()) {
-            return redirect()->back()->with('success', 'Product information inserted successfully!');
+            return redirect()->back()->with('success', 'Post information inserted successfully!');
         }
-        return redirect()->back()->with('failed', 'Product information could not be inserted!');
+        return redirect()->back()->with('failed', 'Post information could not be inserted!');
     }
 
     /**
@@ -88,9 +88,9 @@ class PostController extends Controller
         
         if($post->save()){
             
-            return redirect()->back()->with('success', 'Product information updated successfully!');
+            return redirect()->back()->with('success', 'Post information updated successfully!');
         }
-        return redirect()->back()->with('failed', 'Product information could not update!');
+        return redirect()->back()->with('failed', 'Post information could not update!');
     }
 
     /**
