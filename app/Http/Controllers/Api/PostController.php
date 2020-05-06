@@ -15,8 +15,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        $products = Post::all();
-        return $products;
+        $post = Post::all();
+        return $post;
     }
 
     /**
