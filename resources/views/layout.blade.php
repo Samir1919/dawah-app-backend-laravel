@@ -12,15 +12,15 @@
     <title> Dawah Admin - Dashboard</title>
 
     <!-- Custom fonts for this template-->
-    <link href="{{ URL::to('vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ URL::to('public/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
 
     <!-- Page level plugin CSS-->
-    <link href="{{ URL::to('vendor/datatables/dataTables.bootstrap4.css') }}" rel="stylesheet">
+    <link href="{{ URL::to('public/vendor/datatables/dataTables.bootstrap4.css') }}" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="{{ URL::to('css/sb-admin.css') }}" rel="stylesheet">
+    <link href="{{ URL::to('public/css/sb-admin.css') }}" rel="stylesheet">
 
-    <script src="{{ URL::to('ckeditor/ckeditor.js') }}"></script>
+    <script src="{{ URL::to('public/ckeditor/ckeditor.js') }}"></script>
 
 </head>
 
@@ -192,23 +192,23 @@
 </div>
 
 <!-- Bootstrap core JavaScript-->
-<script src="{{ URL::to('vendor/jquery/jquery.min.js') }}"></script>
-<script src="{{ URL::to('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ URL::to('public/vendor/jquery/jquery.min.js') }}"></script>
+<script src="{{ URL::to('public/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
 <!-- Core plugin JavaScript-->
-<script src="{{ URL::to('vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+<script src="{{ URL::to('public/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
 
 <!-- Page level plugin JavaScript-->
-<script src="{{ URL::to('vendor/chart.js/Chart.min.js') }}"></script>
-<script src="{{ URL::to('vendor/datatables/jquery.dataTables.js') }}"></script>
-<script src="{{ URL::to('vendor/datatables/dataTables.bootstrap4.js') }}"></script>
+<script src="{{ URL::to('public/vendor/chart.js/Chart.min.js') }}"></script>
+<script src="{{ URL::to('public/vendor/datatables/jquery.dataTables.js') }}"></script>
+<script src="{{ URL::to('public/vendor/datatables/dataTables.bootstrap4.js') }}"></script>
 
 <!-- Custom scripts for all pages-->
-<script src="{{ URL::to('js/sb-admin.min.js') }}"></script>
+<script src="{{ URL::to('public/js/sb-admin.min.js') }}"></script>
 
 <!-- Demo scripts for this page-->
-<script src="{{ URL::to('js/demo/datatables-demo.js') }}"></script>
-<script src="{{ URL::to('js/demo/chart-area-demo.js') }}"></script>
+<script src="{{ URL::to('public/js/demo/datatables-demo.js') }}"></script>
+<script src="{{ URL::to('public/js/demo/chart-area-demo.js') }}"></script>
 
 <script>
     // Replace the <textarea id="editor1"> with a CKEditor
